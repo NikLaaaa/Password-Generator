@@ -1,0 +1,295 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
+
+.gradient-text {
+    user-select: none;
+    font-family: 'Rubik One', sans-serif;
+  font-size: 120px;
+  text-transform: uppercase;
+  background: linear-gradient(#0066ff,#ff9c9c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: table;
+  margin: 20px auto
+}
+
+.letters {
+    user-select: none;
+    font-family: 'Rubik One', sans-serif;
+      text-transform: uppercase;
+  background: linear-gradient(#ff0000,#0014ff);
+      -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: 120px;
+    position: absolute;
+    top: 320px;
+    left: 570px;
+}
+
+
+.numbers {
+        user-select: none;
+    font-family: 'Rubik One', sans-serif;
+      text-transform: uppercase;
+  background: linear-gradient(#ff0000,#0014ff);
+      -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: 120px;
+    position: absolute;
+    top: 135px;
+    left: 570px;
+}
+
+
+body {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(134,0,255,1) 100%);
+}
+
+.circle {
+    cursor: pointer;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f0f;
+}
+.circle:active {
+    animation-name: circle;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes circle {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.square {
+    cursor: pointer;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #0ff;
+}
+
+.square:active {
+    animation-name: square;
+    animation-duration: 1s;
+}
+
+@keyframes square {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+
+.rectangle {
+    cursor: pointer;
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  background-color: #ff0;
+}
+
+.rectangle:active {
+    animation-name: rectangle;
+    animation-duration: 2s;
+}
+
+@keyframes rectangle {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.triangle {
+    cursor: pointer;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #f00;
+}
+
+.triangle:active {
+    animation-name: triangle;
+    animation-duration: 1s;
+}
+
+@keyframes triangle {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.pentagon {
+    cursor: pointer;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  background-color: #0f0;
+}
+
+.pentagon:active {
+    animation-name: pentagon;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes pentagon {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.hexagon {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  background-color: #f90;
+}
+
+.hexagon:active {
+    animation-name: hexagon;
+    animation-duration: 1s;
+}
+
+@keyframes hexagon {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+
+.shape1 {
+  top: 200px;
+  left: 100px;
+}
+
+.shape2 {
+  top: 100px;
+  left: 2300px;
+}
+
+.shape3 {
+  top: 1100px;
+  left: 900px;
+}
+
+.shape4 {
+  top: 900px;
+  left: 150px;
+}
+
+.shape5 {
+  top: 600px;
+  left: 300px;
+}
+
+.shape6 {
+  top: 950px;
+  left: 2300px;
+}
+
+
+button {
+    font-family: 'Rubik One', sans-serif;
+    font-size: 50px;
+    position: absolute;
+    top: 350px;
+    left: 1370px;
+ margin-top: 10px;
+ padding: 8px 20px;
+ background-color: #007bff;
+ color: #fff;
+ border: none;
+ border-radius: 15px;
+ cursor: pointer;
+ transition: background-color 0.3s;
+}
+
+
+button:hover {
+ background-color: #0056b3;
+}
+
+button:active {
+ background-color: #0056b3;
+    transform: scale(1.2);
+    animation-duration: 2s;
+    animation-timing-function: ease
+}
+
+.checkboxes {
+position: absolute;
+ margin-top: 10px;
+ display: flex;
+ justify-content: center;
+ margin-top: 5px;
+}
+
+.checkboxes input[type="checkbox"] {
+    cursor: pointer;
+    transform: scale(6.5); /* Увеличиваем размер */
+    position: absolute;
+    top: 430px;
+    left: 430px;
+}
+
+.checkboxes2 input[type="checkbox"] {
+    cursor: pointer;
+    position: absolute;
+    top: 275px;
+    left: 435px;
+    transform: scale(6.5); /* Увеличиваем размер */
+}
+
+.password {
+    font-family: 'Rubik One', sans-serif;
+    position: absolute;
+    top: 500px;
+    left: 1370px;
+ margin-top: 20px;
+ font-size: 75px;
+ font-weight: bold;
+ color: #ff0000;
+ animation: fadeIn 1s ease;
+}
+
+
+@keyframes fadeIn {
+ from {
+   opacity: 0;
+ }
+ to {
+   opacity: 1;
+ }
+}
+
+
+
+
